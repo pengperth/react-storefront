@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect --require env-vars' next dev -p 3001",
+    "dev": "NODE_OPTIONS='--inspect --require env-vars' next dev -p 3008",
     "test": "jest",
     "test:record": "POLLY_MODE=record jest --runInBand --verbose",
     "build": "npm run i18n && next build",
-    "start": "next start -p 3001",
+    "start": "next start -p 3008",
     "lint": "next lint",
     "check-types": "tsc --noEmit",
     "generate": "DOTENV_CONFIG_PATH=.env graphql-codegen -r env-vars --config codegen.yml",

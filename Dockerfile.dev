@@ -15,5 +15,5 @@ RUN pnpm install
 ARG SALEOR_API_URL
 ENV SALEOR_API_URL ${SALEOR_API_URL:-http://localhost:8000/graphql/}
 
-EXPOSE 3000
+EXPOSE 3001
 CMD pnpm turbo run dev --parallel --cache-dir=.turbo
